@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="VideoPlayer.MediaController.SeekBar" parent="android:Widget.SeekBar">
+        <item name="android:progressDrawable">@drawable/video_player_scrubber_progress_horizontal
+        </item>
+        <item name="android:indeterminateDrawable">
+            @drawable/video_player_scrubber_progress_horizontal
+        </item>
+        <item name="android:minHeight">4dip</item>
+        <item name="android:maxHeight">4dip</item>
+        <item name="android:thumb">@drawable/video_player_scrubber_control_thumbr</item>
+        <item name="android:thumbOffset">0dip</item>
+        <item name="android:paddingLeft">1dip</item>
+        <item name="android:paddingRight">1dip</item>
+    </style>
+
+</resources>

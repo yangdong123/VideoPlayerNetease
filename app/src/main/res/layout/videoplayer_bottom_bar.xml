@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="@color/CC000000"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/play_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerInside"
+        android:background="@drawable/icon_mediacontroller_pause" />
+
+    <TextView
+        android:id="@+id/time_current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/play_pause"
+        android:textColor="#ffffffff"
+        android:textSize="12sp"
+        />
+
+    <TextView
+        android:id="@+id/time_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="4dp"
+        android:layout_toLeftOf="@+id/zoom_in_out"
+        android:textColor="#ffffffff"
+        android:textSize="12sp"
+        android:visibility="visible"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/time_duration"
+        android:layout_toRightOf="@+id/time_current">
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            style="@style/VideoPlayer.MediaController.SeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:focusable="true"
+            android:indeterminate="false"
+            android:max="1000" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/zoom_in_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/video_player_zoom_out" />
+</RelativeLayout>
